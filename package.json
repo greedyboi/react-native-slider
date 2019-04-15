@@ -18,8 +18,7 @@
   "scripts": {
     "clean": "rimraf lib",
     "start": "node_modules/react-native/packager/packager.sh",
-    "build": "babel src --out-dir lib",
-    "prepublish": "npm run clean && npm run build"
+    "build": "babel src --out-dir lib"
   },
   "repository": {
     "type": "git",
