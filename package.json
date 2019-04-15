@@ -2,8 +2,9 @@
   "name": "react-native-slider",
   "version": "0.11.0",
   "description": "A pure JavaScript <Slider /> component for react-native",
-  "main": "src/Slider.js",
+  "main": "lib/Slider.js",
   "files": [
+    "lib",
     "src"
   ],
   "author": "Jean Regisser <jean.regisser@gmail.com> (https://github.com/jeanregisser)",
@@ -14,6 +15,12 @@
     "android",
     "slider"
   ],
+  "scripts": {
+    "clean": "rimraf lib",
+    "start": "node_modules/react-native/packager/packager.sh",
+    "build": "babel src --out-dir lib",
+    "prepublish": "npm run clean && npm run build"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",

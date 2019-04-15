@@ -1,6 +1,15 @@
 import React, { PureComponent } from 'react';
 
-import { Animated, Image, StyleSheet, PanResponder, View, Easing, ViewPropTypes, I18nManager } from 'react-native';
+import {
+  Animated,
+  Image,
+  StyleSheet,
+  PanResponder,
+  View,
+  Easing,
+  ViewPropTypes,
+  I18nManager,
+} from 'react-native';
 
 import PropTypes from 'prop-types';
 
